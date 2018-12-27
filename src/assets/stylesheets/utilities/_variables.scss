@@ -1,0 +1,195 @@
+
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+
+
+/* Browser support fallbacks.
+ ========================================================================== */
+
+
+
+/**
+ * Fonts face.
+ */
+
+
+// @include font-face('Muli Black', 'Muli/muli-black-webfont', 900, normal, ttf);
+// @include font-face('Muli ExtraBold', 'Muli/muli-extrabold-webfont', 800, normal, ttf);
+// @include font-face('Muli Bold', 'Muli/muli-bold-webfont', 700, normal, ttf);
+// @include font-face('Muli SemiBold', 'Muli/Muli-SemiBold', 700, normal, ttf);
+// @include font-face('Muli', 'Muli/muli-regular-webfont', 400, normal, ttf);
+// @include font-face('Muli Light', 'Muli/muli-light-webfont', 300, normal, ttf);
+// @include font-face('Muli ExtraLight', 'Muli/muli-extralight-webfont', 200, normal, ttf);
+// @include font-face('Antonio', 'Antonio/Antonio-Bold', 900, normal, ttf);
+
+
+@include font-face('Roboto Mono Bold',   'Roboto_Mono/RobotoMono-Bold', 700, normal, ttf);
+@include font-face('Roboto Mono Bold',   'Roboto_Mono/RobotoMono-BoldItalic', 700, italic, ttf);
+@include font-face('Roboto Mono',        'Roboto_Mono/RobotoMono-Italic', 400, italic, ttf);
+@include font-face('Roboto Mono Light',  'Roboto_Mono/RobotoMono-Light', 300, normal, ttf);
+@include font-face('Roboto Mono Light',  'Roboto_Mono/RobotoMono-LightItalic', 300, italic, ttf);
+@include font-face('Roboto Mono Medium', 'Roboto_Mono/RobotoMono-Medium', 500, normal, ttf);
+@include font-face('Roboto Mono Medium', 'Roboto_Mono/RobotoMono-MediumItalic', 500, italic, ttf);
+@include font-face('Roboto Mono',        'Roboto_Mono/RobotoMono-Regular', 400, normal, ttf);
+@include font-face('Roboto Mono Thin',   'Roboto_Mono/RobotoMono-Thin', 100, normal, ttf);
+@include font-face('Roboto Mono Thin',   'Roboto_Mono/RobotoMono-ThinItalic', 100, italic, ttf);
+
+@include font-face('Rubik Black', 'Rubik/Rubik-Black', 900, normal, ttf);
+@include font-face('Rubik Black', 'Rubik/Rubik-BlackItalic', 900, italic, ttf);
+@include font-face('Rubik Bold', 'Rubik/Rubik-Bold', 700, normal, ttf);
+@include font-face('Rubik Bold', 'Rubik/Rubik-BoldItalic', 700, italic, ttf);
+@include font-face('Rubik Light', 'Rubik/Rubik-Light', 300, normal, ttf);
+@include font-face('Rubik Light', 'Rubik/Rubik-LightItalic', 300, italic, ttf);
+@include font-face('Rubik Medium', 'Rubik/Rubik-Medium', 500, normal, ttf);
+@include font-face('Rubik Medium', 'Rubik/Rubik-MediumItalic', 500, italic, ttf);
+@include font-face('Rubik', 'Rubik/Rubik-Regular', 400, normal, ttf);
+@include font-face('Rubik', 'Rubik/Rubik-Italic', 400, italic, ttf);
+
+/**
+ * Fonts stacks.
+ */
+
+$stack-sans:        Arial, "Helvetica Neue", Helvetica, sans-serif !default;
+$stack-serif:       "Roboto Mono", Times, serif !default;
+$font-stack-sans:   "Rubik", $stack-sans; // Custom sans serif font.
+$font-stack-serif:  $stack-serif; // Custom serif font.
+
+$font-black:        "Rubik Black", $font-stack-sans;
+$font-bold:         "Rubik Bold", $font-stack-sans;
+$font-light:        "Rubik Light", $font-stack-sans;
+$font-medium:       "Rubik Medium", $font-stack-sans;
+$font-roboto:       "Roboto Mono", $font-stack-sans;
+
+
+
+
+/* Fonts.
+ ========================================================================== */
+
+
+
+/**
+ * Modular scale.
+ */
+
+$modularscale: (
+  base: 16px,
+  ratio: $major-third,
+  a: (
+    ratio: $major-third
+  ),
+  640px: (
+    base: 12px,
+    ratio: $minor-third
+  ),
+  1024px: (
+    base: 16px
+  )
+);
+
+
+
+
+
+
+/**
+ * Font properties.
+ */
+
+$base-font-size:      ms(0);
+$base-line-height:    1.5;
+
+
+
+
+
+/* Colors.
+ ========================================================================== */
+
+
+/**
+ * Color defaults.
+ */
+
+$color-white:         #fff;
+$color-grey:          #3E3D45;
+$color-base:          #4C4C4E;
+$color-primary:       #009ddf;
+$color-secondary:     #0a71b3;
+
+
+
+/**
+ * Color states.
+ */
+
+$color-accent:        #4fc08d;
+$color-info:          #0076FF;
+$color-success:       #44DB5E;
+$color-alert:         #FE3824;
+$color-warning:       #FFCD00;
+
+
+/**
+ * Color palette modifiers.
+ */
+
+$palettes: (
+  black: (
+    base:       $color-base,
+    50:         #ECEFF1,
+    100:        #CFD8DC,
+    200:        #B0BEC5,
+    300:        #90A4AE,
+    400:        #78909C,
+    500:        #607D8B,
+    600:        #546E7A,
+    700:        #455A64,
+    800:        #37474F,
+    900:        #263238
+  )
+);
+
+$color-bittersweet:     #FC6767;
+$color-yellow_orange:   #FDAB4C;
+$color-shamrock:        #30C490;
+$color-cornflower_blue: #807BFF;
+$color-principal-red:   #FF5F6D;
+$color-secundary-red:   #FF8989;
+
+
+// Gradients
+
+$principal-gradient:  linear-gradient(to bottom, $color-primary, $color-secondary);
+$secundary-gradient:  linear-gradient(to right, $color-secondary, $color-shamrock);
+$secundary-gradient-reverse:  linear-gradient(to right, $color-shamrock, $color-secondary);
+$warning-gradient:    linear-gradient(to right, $color-principal-red, $color-secundary-red);
+
+
+
+/* Utilities.
+ ========================================================================== */
+
+/**
+ * Animations.
+ */
+
+$base-duration:       .4s;
+$base-timing:         cubic-bezier(0.215, 0.61, 0.355, 1);;
+
+
+
+/**
+ * Z-index list.
+ */
+
+$zindex-navbar:            1000;
+$zindex-dropdown:          1000;
+$zindex-popover:           1060;
+$zindex-tooltip:           1070;
+$zindex-navbar-fixed:      1030;
+$zindex-modal-background:  1040;
+$zindex-modal:             1050;
+$zindex-loading:           1080;

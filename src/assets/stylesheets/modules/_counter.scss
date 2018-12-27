@@ -1,0 +1,29 @@
+.counter{
+  padding: 0 20%;
+  @include flex(center);
+  background-color: $color-primary;
+  height: 250px;
+  @include e(section){
+    width: calc((100% / 5) - 1px);
+    border-right: 1px solid #4dbbe9;
+    height: 100%;
+    @include flex(center, center);
+    flex-direction:column;
+    &:first-of-type{
+      border-left: 1px solid #4dbbe9;
+    }
+    h2{
+      color: $color-white;
+      font-family: $font-black;
+      font-size: 72px;
+      text-align: center;
+    }
+    p{
+      color: $color-white;
+      font-family: $font-roboto;
+      letter-spacing: 2px;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
